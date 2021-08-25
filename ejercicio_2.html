@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ez">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_2</title>
+</head>
+<body>
+    <div>
+        <ul id="list">
+            <li>
+                Elemento 1
+            </li>
+            <li>
+                Elemento 2
+            </li>
+            <li>
+                Elemento 3
+            </li>
+        </ul>
+        <input id="buttonAdd" type="button" value="Añadir elemento">
+    </div>
+
+    <script>
+        'use strict'
+
+        var list = document.getElementById("list");
+        var add = document.getElementById("buttonAdd");
+
+        add.addEventListener("click", function() {
+            var first = document.createElement("li");
+            var firstContent = document.createTextNode("Elemento de prueba");
+            first.appendChild(firstContent);
+            var second = document.createElement("li");
+            var secondContent = document.createTextNode("Texto de prueba");
+            second.appendChild(secondContent);
+
+            list.appendChild(first);
+            list.appendChild(second);
+        });
+
+        
+
+    </script>
+    
+</body>
+</html>

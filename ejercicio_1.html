@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_1</title>
+</head>
+<body>
+
+    <div>
+        <p id="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam eos id tenetur dolor ab ratione sint!</p>
+        <p><a id="link" href="#">Leer mas</a></p>
+    </div>
+    
+    <script>
+        'use strict'
+
+        var p = document.getElementById("parrafo");
+        var link = document.getElementById("link");
+
+        link.addEventListener("click", function() {
+            p.innerHTML = "Voluptatem recusandae eveniet blanditiis accusamus earum quaerat quos culpa vel quisquam, amet sunt, placeat libero omnis optio dignissimos excepturi magni porro in?"
+        });
+
+    </script>
+    
+</body>
+</html>
